@@ -1,0 +1,75 @@
+[
+    { 
+        "product_id": 1,
+        "category_id": 1,
+        "category": "mobile",
+        "product_name": "vivo T2x 5G (Marine Blue, 128 GB)  (4 GB RAM)",
+        "specification": "4GB RAM 128 ROM",
+        "description": "16.71 cm (6.58 inch) Full HD+ Display 50MP + 2MP | 8MP Front Camera",
+        "price":"12,999",
+        "discount": "27% Off", 
+        "quantity": 1,
+        "product_img": " ",
+        "company": "vivo"
+    },
+    { 
+        "product_id": 2,
+        "category_id": 1,
+        "category": "mobile",
+        "product_name": "POCO C50 (Royal Blue, 32 GB)  (2 GB RAM)",
+        "specification": "2GB RAM 32 ROM",
+        "description": "16.56 cm (6.52 inch) HD+ Display 8MP Dual Camera | 5MP Front Camera",
+        "price":"5,699",
+        "discount": "36% Off", 
+        "quantity": 1,
+        "product_img": " ",
+        "company": "POCO"
+
+
+    },
+    { 
+        "product_id": 3,
+        "category_id": 1,
+        "category": "mobile",
+        "product_name": "realme C55 (Sunshower, 64 GB)  (4 GB RAM)",
+        "specification": "4GB RAM 64 ROM",
+        "description": "17.07 cm (6.72 inch) Full HD+ Display 64MP + 2MP | 8MP Front Camera",
+        "price":"10,999",
+        "discount": "15% Off", 
+        "quantity": 1,
+        "product_img": " ",
+        "company": "realme"
+
+
+    },
+    { 
+        "product_id": 4,
+        "category_id": 1,
+        "category": "mobile",
+        "product_name": "APPLE iPhone 13 (Starlight, 128 GB)",
+        "specification": "128 ROM",
+        "description": "15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera",
+        "price":"62,999",
+        "discount": "9% Off", 
+        "quantity": 1,
+        "product_img": " ",
+        "company": "apple"
+
+
+    },
+    { 
+        "product_id": 5,
+        "category_id": 1,
+        "category": "mobile",
+        "product_name": "Xiaomi 11i 5G (Purple Mist, 128 GB)  (8 GB RAM)",
+        "specification": "8GB RAM 128 ROM",
+        "description": "116.94 cm (6.67 inch) Full HD+ AMOLED Display 108MP Rear Camera | 16MP Front Camera",
+        "price":"26,99",
+        "discount": "15% Off", 
+        "quantity": 1,
+        "product_img": " ",
+        "company": "mi"
+
+
+    }
+]
