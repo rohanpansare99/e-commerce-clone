@@ -1,37 +1,37 @@
 [
     {
         "category_id":1,
-        "category_name": "mobile",
-        "category_img" :"https://ibb.co/G0H5jcb"
+        "category_name": "Mobile",
+        "category_img" :"https://ibb.co/G0H5jcb.jpeg"
     },
     {
         "category_id": 2,
-        "category_name": "Electronics",
+        "category_name": "Fashion",
         "category_img" :""
     },
     {
         "category_id": 3,
-        "category_name": "fashion",
+        "category_name": "Electronics",
         "category_img" :""
     },
     {
         "category_id": 4,
-        "category_name": "beauty, toys & more",
+        "category_name": "Home",
         "category_img" :""
     },
     {
         "category_id": 5,
-        "category_name": "home",
+        "category_name": "Appliances",
         "category_img" :""
     },
     {
         "category_id": 6,
-        "category_name": "grocery",
+        "category_name": "Travel",
         "category_img" :""
     },
     {
         "category_id": 7,
-        "category_name": "appliances",
+        "category_name": "Beauty, Toys & more",
         "category_img" :""
     }
 ]
