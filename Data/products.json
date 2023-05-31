@@ -477,7 +477,7 @@
         ]
     },
     { 
-        "product_id": 16,
+        "product_id": 17,
         "category_id": 3,
         "category": "Electronics",
         "subcategory" : [
@@ -506,7 +506,638 @@
                 "offer_name":"No Cost EMI"
             }
         ]
+    },
+    { 
+        "product_id": 18,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 5,
+                "subcat_name":"Audio"
+            }
+        ],
+        "product_name": "OnePlus Bullets Wireless Z2 with Fast Charge, 30 Hrs Battery Life, Earphones with mic Bluetooth Headset  (Magico Black, In the Ear)",
+        "description": "With Mic:Yes |Bluetooth version: 5 |Battery life: 20 Hrs | Charging time: 10 mins",
+        
+        "price":"1,999",
+        "discount": "13% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/99NwQgf/audio1.webp",
+        "brand":[
+            {
+            "brand_id":17,
+            "brand_name":"OnePlus"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 19,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 5,
+                "subcat_name":"Audio"
+            }
+        ],
+        "product_name": "OnePlus Bullets Wireless Z2 with Fast Charge, 30 Hrs Battery Life, Earphones with mic Bluetooth Headset  (Magico Black, In the Ear)",
+        "description": "With Mic:Yes |Bluetooth version: 5 |Battery life: 20 Hrs | Charging time: 10 mins",
+        
+        "price":"1,999",
+        "discount": "13% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/99NwQgf/audio1.webp",
+        "brand":[
+            {
+            "brand_id":17,
+            "brand_name":"OnePlus"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 20,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 5,
+                "subcat_name":"Audio"
+            }
+        ],
+        "product_name": "boAt Airdopes 161 with ASAP Charge, 10mm Drivers and 17 Hours Playback Bluetooth Headset  (Pebble Black, True Wireless)",
+        "description": "With Mic:Yes|Bluetooth version: 5.1|Wireless Range: 10m",
+        
+        "price":"1,399",
+        "discount": "43% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/rFwJy9D/audio2.webp",
+        "brand":[
+            {
+            "brand_id":18,
+            "brand_name":"boAt"
+            }
+        ],
+        "offer":[
+            
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 21,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 5,
+                "subcat_name":"Audio"
+            }
+        ],
+        "product_name": "boAt Stone 350 with _ Playback and Type-c Charging 10 W Bluetooth Speaker  (Black, Mono Channel)",
+        "description": "Power Output(RMS): 10 W|Battery life: 12 hrs|Bluetooth Version: 5|Wireless range: 10 m",
+        
+        "price":"1,699",
+        "discount": "51% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/j4Y15ZV/audio3.webp",
+        "brand":[
+            {
+            "brand_id":18,
+            "brand_name":"boAt"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 22,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 6,
+                "subcat_name":"Laptop"
+            }
+        ],
+        "product_name": "APPLE 2020 Macbook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur) MGN63HN/A  (13.3 inch, Space Grey, 1.29 kg)",
+        "description": "Power Output(RMS): 10 W|Battery life: 12 hrs|Bluetooth Version: 5|Wireless range: 10 m",
+        
+        "price":"79,990",
+        "discount": "19% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/4RMfMPy/mac1.webp",
+        "brand":[
+            {
+            "brand_id":4,
+            "brand_name":"Apple"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            }
+        ]
+    },
+    { 
+        "product_id": 23,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 6,
+                "subcat_name":"Laptop"
+            }
+        ],
+        "product_name": "RedmiBook 15 Core i3 11th Gen - (8 GB/512 GB SSD/Windows 10 Home) Thin and Light Laptop  (15.6 Inch, Charcoal Gray, 1.8 kg, With MS Office)",
+        "description": "Stylish & Portable Thin and Light Laptop|15.6 Inch Full HD LED Anti-glare Display|Light Laptop without Optical Disk Drive",
+        
+        "price":"44,990",
+        "discount": "19% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/jV9pVVr/redmibook2.webp",
+        "brand":[
+            {
+            "brand_id":5,
+            "brand_name":"MI"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            }
+        ]
+    },
+    { 
+        "product_id": 24,
+        "category_id": 4,
+        "category": "Home",
+        "subcategory" : [
+            {
+                "subcat_id": 7,
+                "subcat_name":"Home Furnishing"
+            }
+        ],
+        "product_name": "SPA Furnishing Black, Grey, White Polyester Carpet  (213 cm, X 152 cm, Rectangle)",
+        "description": "Material: Polyester|Type: Carpet|Size: 152 cm x 213 cm",
+        
+        "price":"4,199",
+        "discount": "51% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/f9HXfYV/furnish1.webp",
+        "brand":[
+            {
+            "brand_id":19,
+            "brand_name":"SPA"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 25,
+        "category_id": 4,
+        "category": "Home",
+        "subcategory" : [
+            {
+                "subcat_id": 7,
+                "subcat_name":"Home Furnishing"
+            }
+        ],
+        "product_name": "SPA Furnishing Black, Grey, White Polyester Carpet  (213 cm, X 152 cm, Rectangle)",
+        "description": "Material: Jute|Type: Area Rug|Size: 60 cm x 60 cm",
+        
+        "price":"269",
+        "discount": "71% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/JksDxx0/furnish2.webp",
+        "brand":[
+            {
+            "brand_id":19,
+            "brand_name":"Gs textile"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 26,
+        "category_id": 4,
+        "category": "Home",
+        "subcategory" : [
+            {
+                "subcat_id": 8,
+                "subcat_name":"Kitchen & Dinning"
+            }
+        ],
+        "product_name": "MILTON Ernesto Inner Steel Jr. Casserole Set of 3 (420 ml, 850 ml, 1.43 Litres), Red Pack of 3 Thermoware Casserole Set  (420 ml, 850 ml, 1430 ml)",
+        "description": "Type: Casserole Set Made of: Steel, Plastic",
+        
+        "price":"999",
+        "discount": "66% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/xhwsvGZ/kitchen1.webp",
+        "brand":[
+            {
+            "brand_id":20,
+            "brand_name":"MILTON"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 27,
+        "category_id": 4,
+        "category": "Home",
+        "subcategory" : [
+            {
+                "subcat_id": 9,
+                "subcat_name":"Home Decor"
+            }
+        ],
+        "product_name": "AJANTA Analog 33 cm X 33 cm Wall Clock  (Multicolor, Black, White, Standard)",
+        "description": "Size: 33 cm x 33 cm|Frame Material: Plastic, Wooden, Metal",
+        
+        "price":"408",
+        "discount": "74% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/T8L8Y2J/decor1.webp",
+        "brand":[
+            {
+            "brand_id":21,
+            "brand_name":"Ajanta"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 28,
+        "category_id": 4,
+        "category": "Home",
+        "subcategory" : [
+            {
+                "subcat_id": 9,
+                "subcat_name":"Home Decor"
+            }
+        ],
+        "product_name": "AJANTA Decor Villa 25 cm HEART DESIGN Switch Board Removable Sticker  (Pack of 6)",
+        "description": "Color: Multicolor",
+        
+        "price":"169",
+        "discount": "74% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/py694T0/decor2.webp",
+        "brand":[
+            {
+            "brand_id":21,
+            "brand_name":"Ajanta"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 29,
+        "category_id": 5,
+        "category": "Appliances",
+        "subcategory" : [
+            
+        ],
+        "product_name": "mi star led smart choice 06 1000 W Dry Iron  (Multicolor)",
+        "description": "99 Ratings & 17 Reviews",
+        
+        "price":"456",
+        "discount": "74% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/bJ0bGb6/iron1.webp",
+        "brand":[
+            {
+            "brand_id":5,
+            "brand_name":"MI"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 30,
+        "category_id": 5,
+        "category": "Appliances",
+        "subcategory" : [
+            
+        ],
+        "product_name": "OnePlus Y1S Pro 138 cm (55 inch) Ultra HD (4K) LED Smart Android TV  (55UD2A00)",
+        "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+        
+        "price":"39,999",
+        "discount": "74% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/jgLQMmQ/tv1.webp",
+        "brand":[
+            {
+            "brand_id":5,
+            "brand_name":"MI"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 31,
+        "category_id": 5,
+        "category": "Appliances",
+        "subcategory" : [
+            
+        ],
+        "product_name": "Mi 4A 80 cm (32 inch) HD Ready LED Smart Android TV",
+        "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
+        
+        "price":"9,999",
+        "discount": "34% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/3rHMWMC/tv2.webp",
+        "brand":[
+            {
+            "brand_id":5,
+            "brand_name":"MI"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 32,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 10,
+                "subcat_name":"Beauty & personal Care"
+            }
+        ],
+        "product_name": "Bingeable 1)Professional Makeup Brushes 5 Pcs Set & Pack of 6 Washable Makeup sponges/ Blender/ Puff With 18 Colors Rose Gold Remastered Eye Shadow Palette  (3 Items in the set)",
+        "description": "Pack of: 3|For: Women",
+        
+        "price":"232",
+        "discount": "34% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/fQG8w25/beauty1.webp",
+        "brand":[
+            {
+            "brand_id":22,
+            "brand_name":"Bingeable"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 33,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 10,
+                "subcat_name":"Beauty & personal Care"
+            }
+        ],
+        "product_name": "Bingeable Waterproof HDA 36h Sketch Pen Eyeliner with Set of 5 Washable Makeup brushes & Pack of 6 Cotton Pad Makeup Blender Powder puff with T.Y.A. 590 Multi purpose",
+        "description": "Pack of: 16|For: Women",
+        
+        "price":"569",
+        "discount": "34% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/RS08Bxq/beauty2.webp",
+        "brand":[
+            {
+            "brand_id":22,
+            "brand_name":"Bingeable"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 34,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 11,
+                "subcat_name":"Toys"
+            }
+        ],
+        "product_name": "AS TOYS Toys Talking Cactus Baby Toys for Kids Dancing Cactus Toys Can Cactus Baby Toys Gag Toy  (Multicolor)",
+        "description": "It can sing more than 120 cheery songs, bringing your child a happy time in a lifetime, help you take care of your children",
+        
+        "price":"460",
+        "discount": "34% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/0GYK9pK/toy1.webp",
+        "brand":[
+            {
+            "brand_id":23,
+            "brand_name":"AS TOYS"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 35,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 11,
+                "subcat_name":"Toys"
+            }
+        ],
+        "product_name": "Caught Trendy CT-02 Cartoon Car Gag Toy  (Multicolor)",
+        "description": "Playing with these kinds of toys will provide your child with hours of imaginative play. It helps promote hand-eye coordination, sensory reception and motor skills.",
+        
+        "price":"165",
+        "discount": "74% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/dMWx2Ts/toy2.webp",
+        "brand":[
+            {
+            "brand_id":8,
+            "brand_name":"KETCH"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 36,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 12,
+                "subcat_name":"Automotive Accessories"
+            }
+        ],
+        "product_name": "Auto Emporium Hub Solar Perfume Double Ring Rotating Fragrance Auto Pearl-Organc Air Freshener Oil Air Purifier  (Pack of 1)",
+        "description": "Operating Voltage: 0 V|Power Consumption: 0 W",
+        
+        "price":"349",
+        "discount": "65% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/hfTNxf7/auto1.webp",
+        "brand":[
+            {
+            "brand_id":8,
+            "brand_name":"KETCH"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 37,
+        "category_id": 6,
+        "category": "Beauty, Toys & more",
+        "subcategory" : [
+            {
+                "subcat_id": 12,
+                "subcat_name":"Automotive Accessories"
+            }
+        ],
+        "product_name": "Edge Auto Hero Hunk 150 / 43 Teeth Sprocket  (Hero Hunk)",
+        "description": "High Quality Sprocket designed for professional riders to enhance the riding experience and improve the milage of the bike. Extremely durable quality sprocket.",
+        
+        "price":"1,532",
+        "discount": "65% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/cFh6WD9/auto2.webp",
+        "brand":[
+            {
+            "brand_id":24,
+            "brand_name":"Hero"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
     }
+
 
 
 
