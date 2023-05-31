@@ -9,8 +9,19 @@
         "price":"12,999",
         "discount": "27% Off", 
         "quantity": 1,
-        "product_img": " ",
-        "company": "vivo"
+        "product_img": "https://i.ibb.co/5n7B68F/vivoT2x.webp",
+        "brand":[
+            {
+            "brand_id":1,
+            "brand_name":"vivo"
+            }
+        ],
+        "offer":[
+            {
+            "offer_id":1,
+            "offer_name":"no cost EMI"
+            }
+        ]
     },
     { 
         "product_id": 2,
@@ -22,10 +33,23 @@
         "price":"5,699",
         "discount": "36% Off", 
         "quantity": 1,
-        "product_img": " ",
-        "company": "POCO"
-
-
+        "product_img": "https://i.ibb.co/znmLYDH/pocco-c50.webp",
+        "brand":[
+            {
+            "brand_id":2,
+            "brand_name":"POCO"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
     },
     { 
         "product_id": 3,
@@ -37,10 +61,23 @@
         "price":"10,999",
         "discount": "15% Off", 
         "quantity": 1,
-        "product_img": " ",
-        "company": "realme"
-
-
+        "product_img": "https://i.ibb.co/tmgT0Cm/realme-c55.webp",
+        "brand":[
+            {
+            "brand_id":3,
+            "brand_name":"Realme"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
     },
     { 
         "product_id": 4,
@@ -52,10 +89,23 @@
         "price":"62,999",
         "discount": "9% Off", 
         "quantity": 1,
-        "product_img": " ",
-        "company": "apple"
-
-
+        "product_img": "https://i.ibb.co/ct6kqJt/ipnone13.webp",
+        "brand":[
+            {
+            "brand_id":4,
+            "brand_name":"Apple"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
     },
     { 
         "product_id": 5,
@@ -67,9 +117,403 @@
         "price":"26,99",
         "discount": "15% Off", 
         "quantity": 1,
-        "product_img": " ",
-        "company": "mi"
-
-
+        "product_img": "https://i.ibb.co/m5g0ZZq/mi11i.webp",
+        "brand":[
+            {
+            "brand_id":5,
+            "brand_name":"MI"
+            }
+        ],
+        "offer":[
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            },
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 6,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 1,
+                "subcat_name":"Men"
+            }
+        ],
+        "product_name": "Men Printed Round Neck Pure Cotton Beige T-Shirt",
+        "description": "38 ratings and 0 reviews",
+        "size":"XL",
+        "price":"399",
+        "discount": "66% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/r3THM0t/tshirt1.webp",
+        "brand":[
+            {
+            "brand_id":6,
+            "brand_name":"Veirdo"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 7,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 1,
+                "subcat_name":"Men"
+            }
+        ],
+        "product_name": "Men Striped Polo Neck Cotton Blend Navy Blue T-Shirt",
+        "description": "38 ratings and 0 reviews",
+        "size":"XL",
+        "price":"321",
+        "discount": "75% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/fYGKsv6/tshirt2.webp",
+        "brand":[
+            {
+            "brand_id":7,
+            "brand_name":"TEEMEX"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 8,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 1,
+                "subcat_name":"Men"
+            }
+        ],
+        "product_name": "Men Slim Mid Rise Light Blue Jeans",
+        "description": "106 ratings and 4 reviews",
+        "size":"32",
+        "price":"946",
+        "discount": "56% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/6t0jhMm/mentrou1.webp",
+        "brand":[
+            {
+            "brand_id":8,
+            "brand_name":"KETCH"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 9,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 1,
+                "subcat_name":"Men"
+            }
+        ],
+        "product_name": "Men Printed Round Neck Cotton Blend Light Blue T-Shirt",
+        "description": "6,574 ratings and 286 reviews",
+        "size":"XL",
+        "price":"249",
+        "discount": "56% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/bX5ZwdH/memtshirt2.webp",
+        "brand":[
+            {
+            "brand_id":9,
+            "brand_name":"NB NICKY BOY "
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 10,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 2,
+                "subcat_name":"Women"
+            }
+        ],
+        "product_name": "Women Maxi Blue Dress",
+        "description": "39,734 ratings and 3,266 reviews",
+        "size":"M",
+        "price":"359",
+        "discount": "81% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/fvMJ057/womtop1.webp",
+        "brand":[
+            {
+            "brand_id":10,
+            "brand_name":"Daevish"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 11,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 2,
+                "subcat_name":"Women"
+            }
+        ],
+        "product_name": "Women Gown Grey Dress",
+        "description": "39,734 ratings and 3,266 reviews",
+        "size":"M",
+        "price":"559",
+        "discount": "80% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/BnKZdvv/womtop2.webp",
+        "brand":[
+            {
+            "brand_id":11,
+            "brand_name":"Sanwariya Creation "
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 12,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 2,
+                "subcat_name":"Women"
+            }
+        ],
+        "product_name": "Women Regular Fit Dark Blue Viscose Rayon Trousers",
+        "description": "39,734 ratings and 3,266 reviews",
+        "size":"28",
+        "price":"499",
+        "discount": "75% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/6tr3PVr/wombot1.webp",
+        "brand":[
+            {
+            "brand_id":12,
+            "brand_name":"KOTTY"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 13,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 3,
+                "subcat_name":"Kids"
+            }
+        ],
+        "product_name": "Disney Princess Girls Maxi/Full Length Party Dress  (Red, Sleeveless)",
+        "description": "39,734 ratings and 3,266 reviews",
+        "size":"1-2 year",
+        "price":"885",
+        "discount": "70% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/jM2LPB8/kid1.webp",
+        "brand":[
+            {
+            "brand_id":13,
+            "brand_name":"smf"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 14,
+        "category_id": 2,
+        "category": "Fashion",
+        "subcategory" : [
+            {
+                "subcat_id": 3,
+                "subcat_name":"Kids"
+            }
+        ],
+        "product_name": "Baby Girls Midi/Knee Length Casual Dress  (Blue, Cap Sleeve)",
+        "description": "5,431 ratings and 411 review",
+        "size":"6-10 months",
+        "price":"220",
+        "discount": "40% Off", 
+        "quantity": 100,
+        "product_img": "https://i.ibb.co/kMmmDb6/kid2.webp",
+        "brand":[
+            {
+            "brand_id":14,
+            "brand_name":"smartbazar"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":2,
+                "offer_name":"Special Price"
+            }
+        ]
+    },
+    { 
+        "product_id": 15,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 4,
+                "subcat_name":"Cameras"
+            }
+        ],
+        "product_name": "Canon EOS M50 Mark II Mirrorless Camera EF-M15-45mm is STM Lens  (Black)",
+        "description": "2 Year Warranty (1 year standard warranty + 1 year additional warranty from the date of purchase made by the customer.)",
+        
+        "price":"58,999",
+        "discount": "11% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/kDvRX3B/camera.webp",
+        "brand":[
+            {
+            "brand_id":15,
+            "brand_name":"Canon"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            }
+        ]
+    },
+    { 
+        "product_id": 16,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 4,
+                "subcat_name":"Cameras"
+            }
+        ],
+        "product_name": "SONY Alpha Full Frame ILCE-7M2K/BQ IN5 Mirrorless Camera Body with 28 - 70 mm Lens  (Black)",
+        "description": "4K/HD format, High-performance Fast Hybrid AF, Phase-detection AF, The Sony full-frame advantage, BIONZ X?speed and precision",
+        
+        "price":"80,999",
+        "discount": "37% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/rc0KFCY/cam2sony.webp",
+        "brand":[
+            {
+            "brand_id":16,
+            "brand_name":"Sony"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            }
+        ]
+    },
+    { 
+        "product_id": 16,
+        "category_id": 3,
+        "category": "Electronics",
+        "subcategory" : [
+            {
+                "subcat_id": 4,
+                "subcat_name":"Cameras"
+            }
+        ],
+        "product_name": "SONY Alpha ILCE-6100Y APS-C Mirrorless Camera with Dual Lens 16-50 mm & 55-210 mm Zoom Featuring Eye AF and 4K movie recording  (Black)",
+        "description": "Flexible low-angle shooting, Convenient Touch Tracking and Touch Focus features, Cleaner images in dimly lit settings, Superior image resolution and natural-looking textures, Uncompromising image quality, Real-time Tracking, Persistent tracking at high speed, NFC & Bluetooth",
+        
+        "price":"78,999",
+        "discount": "12% Off", 
+        "quantity": 10,
+        "product_img": "https://i.ibb.co/B31Gj9R/cam3sony.webp",
+        "brand":[
+            {
+            "brand_id":16,
+            "brand_name":"Sony"
+            }
+        ],
+        "offer":[
+            
+            {
+                "offer_id":1,
+                "offer_name":"No Cost EMI"
+            }
+        ]
     }
+
+
+
+
+
+
+
+
+
 ]

@@ -2,36 +2,101 @@
     {
         "category_id":1,
         "category_name": "Mobile",
-        "category_img" :"https://ibb.co/G0H5jcb.jpeg"
+        "category_img" :"https://i.ibb.co/6HrQqNB/22fddf3c7da4c4f4.webp",
+        "subcategory" : []
     },
     {
         "category_id": 2,
         "category_name": "Fashion",
-        "category_img" :""
+        "category_img" :"https://i.ibb.co/C6RfZ9D/fashion.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 1,
+                "subcat_name":"Men",
+                "subcat_img":"https://i.ibb.co/wsxxZVz/men.webp"
+            },
+            {
+                "subcat_id": 2,
+                "subcat_name":"Women",
+                "subcat_img":"https://i.ibb.co/S6ZTMRZ/women.webp"
+            },
+            {
+                "subcat_id": 3,
+                "subcat_name":"Kids",
+                "subcat_img":"https://i.ibb.co/t3PRKf0/kids.webp"
+            }
+        ]
     },
     {
         "category_id": 3,
         "category_name": "Electronics",
-        "category_img" :""
+        "category_img" :"https://i.ibb.co/sbvpQqH/electronics.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 4,
+                "subcat_name":"Cameras",
+                "subcat_img":"https://i.ibb.co/kDvRX3B/camera.webp"
+            },
+            {
+                "subcat_id": 5,
+                "subcat_name":"Audio",
+                "subcat_img":"https://i.ibb.co/FnLRV1z/audio.webp"
+            },
+            {
+                "subcat_id": 6,
+                "subcat_name":"Laptop",
+                "subcat_img":"https://i.ibb.co/0Bf45M6/laptop.webp"
+            }
+        ]
     },
     {
         "category_id": 4,
         "category_name": "Home",
-        "category_img" :""
+        "category_img" :"https://i.ibb.co/b7bnw9h/home.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 7,
+                "subcat_name":"Home Furnishing",
+                "subcat_img":"https://i.ibb.co/nDNGrSn/home-furnish.webp"
+            },
+            {
+                "subcat_id": 8,
+                "subcat_name":"Kitchen & Dinning",
+                "subcat_img":"https://i.ibb.co/QPzKM5H/dinning.webp"
+            },
+            {
+                "subcat_id": 9,
+                "subcat_name":"Home Decor",
+                "subcat_img":"https://i.ibb.co/R6zdg9R/decor.webp"
+            }
+        ]
     },
     {
         "category_id": 5,
         "category_name": "Appliances",
-        "category_img" :""
+        "category_img" :"https://i.ibb.co/0GqtZ1d/Appliences.webp",
+        "subcategory" : []
     },
     {
         "category_id": 6,
-        "category_name": "Travel",
-        "category_img" :""
-    },
-    {
-        "category_id": 7,
         "category_name": "Beauty, Toys & more",
-        "category_img" :""
+        "category_img" :"https://i.ibb.co/rZHTv7n/toys.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 10,
+                "subcat_name":"Beauty & personal Care",
+                "subcat_img":"https://i.ibb.co/F7mKNJs/beauty.webp"
+            },
+            {
+                "subcat_id": 11,
+                "subcat_name":"Toys",
+                "subcat_img":"https://i.ibb.co/rZHTv7n/toys.webp"
+            },
+            {
+                "subcat_id": 11,
+                "subcat_name":"Automotive Accessories",
+                "subcat_img":"https://i.ibb.co/h8hpKVp/auto-accesso.webp"
+            }
+        ]
     }
 ]
