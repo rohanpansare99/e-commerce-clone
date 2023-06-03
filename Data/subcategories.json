@@ -1,4 +1,4 @@
-db.subcategory.insert([
+db.subcategories.insert([
 
     {
         "subcat_id": 1,

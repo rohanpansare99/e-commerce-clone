@@ -3,6 +3,12 @@ db.products.insert([
         "product_id": 1,
         "category_id": 1,
         "category": "mobile",
+        "subcategory" : [
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
+        ],
         "product_name": "vivo T2x 5G (Marine Blue, 128 GB)  (4 GB RAM)",
         "specification": "4GB RAM 128 ROM",
         "description": "16.71 cm (6.58 inch) Full HD+ Display 50MP + 2MP | 8MP Front Camera",
@@ -27,6 +33,12 @@ db.products.insert([
         "product_id": 2,
         "category_id": 1,
         "category": "mobile",
+        "subcategory" : [
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
+        ],
         "product_name": "POCO C50 (Royal Blue, 32 GB)  (2 GB RAM)",
         "specification": "2GB RAM 32 ROM",
         "description": "16.56 cm (6.52 inch) HD+ Display 8MP Dual Camera | 5MP Front Camera",
@@ -55,6 +67,12 @@ db.products.insert([
         "product_id": 3,
         "category_id": 1,
         "category": "mobile",
+        "subcategory" : [
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
+        ],
         "product_name": "realme C55 (Sunshower, 64 GB)  (4 GB RAM)",
         "specification": "4GB RAM 64 ROM",
         "description": "17.07 cm (6.72 inch) Full HD+ Display 64MP + 2MP | 8MP Front Camera",
@@ -83,6 +101,12 @@ db.products.insert([
         "product_id": 4,
         "category_id": 1,
         "category": "mobile",
+        "subcategory" : [
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
+        ],
         "product_name": "APPLE iPhone 13 (Starlight, 128 GB)",
         "specification": "128 ROM",
         "description": "15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera",
@@ -111,6 +135,12 @@ db.products.insert([
         "product_id": 5,
         "category_id": 1,
         "category": "mobile",
+        "subcategory" : [
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
+        ],
         "product_name": "Xiaomi 11i 5G (Purple Mist, 128 GB)  (8 GB RAM)",
         "specification": "8GB RAM 128 ROM",
         "description": "116.94 cm (6.67 inch) Full HD+ AMOLED Display 108MP Rear Camera | 16MP Front Camera",
@@ -866,7 +896,10 @@ db.products.insert([
         "category_id": 5,
         "category": "Appliances",
         "subcategory" : [
-            
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
         ],
         "product_name": "mi star led smart choice 06 1000 W Dry Iron  (Multicolor)",
         "description": "99 Ratings & 17 Reviews",
@@ -894,7 +927,10 @@ db.products.insert([
         "category_id": 5,
         "category": "Appliances",
         "subcategory" : [
-            
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
         ],
         "product_name": "OnePlus Y1S Pro 138 cm (55 inch) Ultra HD (4K) LED Smart Android TV  (55UD2A00)",
         "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",
@@ -925,7 +961,10 @@ db.products.insert([
         "category_id": 5,
         "category": "Appliances",
         "subcategory" : [
-            
+            {
+                "subcat_id": 0,
+                "subcat_name":""
+            }
         ],
         "product_name": "Mi 4A 80 cm (32 inch) HD Ready LED Smart Android TV",
         "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube",

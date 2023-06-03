@@ -1,4 +1,4 @@
-db.category.insert([
+db.categories.insert([
     {
         "category_id":1,
         "category_name": "Mobile",
