@@ -1,4 +1,4 @@
-[
+db.products.insert([
     { 
         "product_id": 1,
         "category_id": 1,
@@ -1147,4 +1147,4 @@
 
 
 
-]
+])

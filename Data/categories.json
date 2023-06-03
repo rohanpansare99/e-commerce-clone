@@ -1,4 +1,4 @@
-[
+db.category.insert([
     {
         "category_id":1,
         "category_name": "Mobile",
@@ -99,4 +99,4 @@
             }
         ]
     }
-]
+])
