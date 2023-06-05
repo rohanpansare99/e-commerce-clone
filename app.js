@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-let port = 1920;
+let port = process.env.PORT||1920;
 let Mongo = require('mongodb');
 const bodyParser = require('body-parser');
 const cors = require('cors');
