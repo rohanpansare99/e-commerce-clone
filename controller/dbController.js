@@ -27,9 +27,45 @@ async function getData(colName, query){
     }
     return output;
 }
+
+async function postData(colName,data){
+    let output;
+    try{
+        output = await db.collection(colName).insertOne(data)
+    }
+    catch(err){
+        output = {"response":"Error in postData"}
+    }
+    return output
+}
+
+async function updateOrder(colName,condition,data){
+    let output;
+    try{
+        output = await db.collection(colName).updateOne(condition,data)
+    } catch(err){
+        output = {"response":"Error in update data"}
+    }
+    return output
+}
+
+async function deleteOrder(colName,condition){
+    let output;
+    try{
+        output = await db.collection(colName).deleteOne(condition)
+    } catch(err){
+        output = {"response":"Error in delete data"}
+    }
+    return output
+}
+
+
 module.exports = {
     dbConnect,
     db,
-    getData
+    getData,
+    postData,
+    updateOrder,
+    deleteOrder
 }
 

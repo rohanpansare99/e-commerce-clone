@@ -9,7 +9,7 @@
 
 //page2
    >List of Products
-   * http://localhost:1920/products
+   * http://localhost:1920/products/1
 
    >List of products wrt to brand
    * http://localhost:1920/filter/1?brandId=7
@@ -23,12 +23,24 @@
    
 
 //page4
-  >List of item(order summary)
+  >Items selected
+   * 
+
   >Place order
+   * http://localhost:1920/placeOrder
 
 
 //Page5
    >List of all orders
-   >Update order details
-   >delete order details
+   * http://localhost:1920/orders
 
+   >Update order details
+   * http://localhost:1920/updateOrder
+
+   >delete order details
+   * http://localhost:1920/deleteOrder
+
+
+
+
+{ "name" : "Arun", "email" : "ar123@gmail.com", "address" : "Home", "phone" : 893121257, "cost" : 1900, "menuItem" : [ 1, 2, 3 ] }

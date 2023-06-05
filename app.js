@@ -1,7 +1,17 @@
 let express = require('express');
 let app = express();
 let port = 1920;
-let {dbConnect, db, getData} = require('./controller/dbController');
+let Mongo = require('mongodb');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+let {dbConnect, db, getData,postData, updateOrder,deleteOrder} = require('./controller/dbController');
+
+
+// middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(cors())
+
 
 app.get('/', (req,res) => {
     res.send('Hi from Express');
@@ -24,7 +34,17 @@ app.get('/subcategories',async (req,res) => {
     res.send(output);
 })
 
-//Products
+//Products  wrt subcategory
+app.get('/products/:subCatId', async(req,res) => {
+    let subCatId = Number(req.params.subCatId);
+    let query = {"subcategory.subcat_id": subCatId}
+   
+    let collection = "products";
+    let output = await getData(collection,query);
+    res.send(output)
+})
+
+//Products after filter
 app.get('/filter/:subCatId', async(req,res) => {
     let subCatId = Number(req.params.subCatId);
     let brandId = Number(req.query.brandId)
@@ -56,6 +76,76 @@ app.get('/details/:id', async(req,res) => {
     let output = await getData(collection,query);
     res.send(output)
 })
+//    let id = new Mongo.ObjectId(req.params.id)
+
+
+//orders
+app.get('/orders',async(req,res) => {
+    let query = {};
+    if(req.query.email){
+        query={email:req.query.email}
+    }else{
+        query = {}
+    }
+   
+    let collection = "orders";
+    let output = await getData(collection,query);
+    res.send(output)
+})
+
+//add to cart details
+app.post('/addToCart', async(req, res) => {
+    if (Array.isArray(req.body.id)){
+        let query = {product_id: {$in:req.body.id}}
+        let collection = 'cart'
+        let output = await postData(collection,query);
+        res.send(output)
+    }
+    else{
+        res.send('Please enter data in form of array')
+    }
+})
+//cart details
+app.get('/cartDetails', async(req, res) => {
+
+        let query = {}
+        let collection = 'cart'
+        let output = await getData(collection,query);
+        res.send(output)
+    
+})
+
+
+//placeOrder
+app.post('/placeOrder',async(req,res) => {
+    let data = req.body;
+    let collection = "orders";
+    let output = await postData(collection,data)
+    res.send(output)
+})
+
+//update order
+app.put('/updateOrder',async(req,res) => {
+    let collection = 'orders';
+    let condition = {"_id":new Mongo.ObjectId(req.body._id)}
+    let data = {
+        $set:{
+            "status":req.body.status
+        }
+    }
+    let output = await updateOrder(collection,condition,data)
+    res.send(output)
+})
+
+//delete order
+app.delete('/deleteOrder',async(req,res) => {
+    let collection = 'orders';
+    let condition = {"_id":new Mongo.ObjectId(req.body._id)}
+    let output = await deleteOrder(collection,condition)
+    res.send(output)
+})
+
+
 
 
 

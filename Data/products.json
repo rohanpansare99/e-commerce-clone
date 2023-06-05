@@ -897,7 +897,7 @@ db.products.insert([
         "category": "Appliances",
         "subcategory" : [
             {
-                "subcat_id": 0,
+                "subcat_id": 100,
                 "subcat_name":""
             }
         ],
@@ -928,7 +928,7 @@ db.products.insert([
         "category": "Appliances",
         "subcategory" : [
             {
-                "subcat_id": 0,
+                "subcat_id": 100,
                 "subcat_name":""
             }
         ],
@@ -962,7 +962,7 @@ db.products.insert([
         "category": "Appliances",
         "subcategory" : [
             {
-                "subcat_id": 0,
+                "subcat_id": 100,
                 "subcat_name":""
             }
         ],
