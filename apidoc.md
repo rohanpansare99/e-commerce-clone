@@ -10,7 +10,7 @@
    * http://localhost:1920/subcategories?catId=2
 
 //page2
-   >List of Products
+   >List of Products wrt subcategories
    * https://e-com-24a3.onrender.com/products/1
    * http://localhost:1920/products/1
 
@@ -27,9 +27,14 @@
    * https://e-com-24a3.onrender.com/details/1
    * http://localhost:1920/details/1
    
+   >Add item to cart
+   * 
 
 //page4
-  >Items selected
+  >List of Items in cart
+   * 
+
+   >Delete item from cart
    * 
 
   >Place order
