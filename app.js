@@ -95,18 +95,27 @@ app.get('/orders',async(req,res) => {
 
 //add to cart details
 app.post('/addToCart', async(req, res) => {
-    // if (Array.isArray(req.body.id)){
-    if ((req.body.id)){
-        // let query = {product_id: {$in:req.body.id}}
         let query = {product_id: req.body.id}
         let collection = 'cart'
         let output = await postData(collection,query);
         res.send(output)
-    }
-    // else{
-    //     res.send('Please enter data ')
-    // }
+    
 })
+
+// //add to cart details
+// app.post('/addToCart', async(req, res) => {
+//     // if (Array.isArray(req.body.id)){
+//     if ((req.body.id)){
+//         // let query = {product_id: {$in:req.body.id}}
+//         let query = {product_id: req.body.id}
+//         let collection = 'cart'
+//         let output = await postData(collection,query);
+//         res.send(output)
+//     }
+//     // else{
+//     //     res.send('Please enter data ')
+//     // }
+// })
 //cart details
 app.get('/cartDetails', async(req, res) => {
 
