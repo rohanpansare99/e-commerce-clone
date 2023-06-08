@@ -68,6 +68,7 @@ button, a{
 .categories {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+
 }
 .categories::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -83,7 +84,8 @@ button, a{
     height: 70%;
 }
 .cat_img img{
-    height: 100%;
+    margin-top: 10%;
+    height: 90%;
 }
 .cat_title{
     font-weight: 500;
