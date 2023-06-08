@@ -6,7 +6,6 @@
 
 APIs
 
-
  E-commerce App(flipkart)
 
 //page 1
@@ -19,7 +18,7 @@ APIs
    * http://localhost:1920/subcategories?catId=2
 
 //page2
-   >List of Products
+   >List of Products wrt subcategories
    * https://e-com-24a3.onrender.com/products/1
    * http://localhost:1920/products/1
 
@@ -36,10 +35,18 @@ APIs
    * https://e-com-24a3.onrender.com/details/1
    * http://localhost:1920/details/1
    
+   >Add item to cart
+   * https://e-com-24a3.onrender.com/addToCart
+   * http://localhost:1920/addToCart
 
 //page4
-  >Items selected
-   * 
+  >List of Items in cart
+   * https://e-com-24a3.onrender.com/cartDetails
+   * http://localhost:1920/cartDetails
+
+   >Delete item from cart
+   * https://e-com-24a3.onrender.com/deleteItem
+   * http://localhost:1920/deleteItem
 
   >Place order
    * https://e-com-24a3.onrender.com/placeOrder

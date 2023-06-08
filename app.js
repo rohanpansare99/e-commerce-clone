@@ -97,15 +97,15 @@ app.get('/orders',async(req,res) => {
 app.post('/addToCart', async(req, res) => {
     // if (Array.isArray(req.body.id)){
     if ((req.body.id)){
-        // let query = {product_id: {$in:req.body.id}}
-        let query = {product_id: req.body.id}
+        let query = {product_id: {$in:req.body.id}}
+        // let query = {product_id: req.body.id}
         let collection = 'cart'
         let output = await postData(collection,query);
         res.send(output)
     }
-    else{
-        res.send('Please enter data ')
-    }
+    // else{
+    //     res.send('Please enter data ')
+    // }
 })
 //cart details
 app.get('/cartDetails', async(req, res) => {
@@ -115,6 +115,13 @@ app.get('/cartDetails', async(req, res) => {
         let output = await getData(collection,query);
         res.send(output)
     
+})
+//delete item
+app.delete('/deleteItem',async(req,res) => {
+    let collection = 'cart';
+    let condition = {"_id":new Mongo.ObjectId(req.body._id)}
+    let output = await deleteOrder(collection,condition)
+    res.send(output)
 })
 
 
@@ -146,6 +153,7 @@ app.delete('/deleteOrder',async(req,res) => {
     let output = await deleteOrder(collection,condition)
     res.send(output)
 })
+
 
 
 

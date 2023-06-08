@@ -29,13 +29,16 @@
    
    >Add item to cart
    * 
+   * http://localhost:1920/addToCart
 
 //page4
   >List of Items in cart
    * 
+   * http://localhost:1920/cartDetails
 
    >Delete item from cart
    * 
+   * http://localhost:1920/deleteItem
 
   >Place order
    * https://e-com-24a3.onrender.com/placeOrder
