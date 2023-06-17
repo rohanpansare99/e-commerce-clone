@@ -11,7 +11,7 @@ db.products.insert([
         ],
         "product_name": "vivo T2x 5G (Marine Blue, 128 GB)  (4 GB RAM)",
         "specification": "4GB RAM 128 ROM",
-        "description": "16.71 cm (6.58 inch) Full HD+ Display 50MP + 2MP | 8MP Front Camera",
+        "description": ["16.71 cm (6.58 inch) Full HD+ Display 50MP + 2MP"," | 8MP Front Camera"],
         "price":"12,999",
         "discount": "27% Off", 
         "quantity": 1,
