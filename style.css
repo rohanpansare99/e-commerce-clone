@@ -35,6 +35,40 @@ button, a{
     color: white;
 }
 
+/* Login */
+.login_conatiner{
+    position: absolute;
+    top: 28%;
+    right: 25%;
+    width: 55%;
+    height: 50%;
+    /* background-color: #fff; */
+    z-index: 9999;
+}
+.login_row{
+    height: 100%;
+}
+.login_form{
+
+    color: #919294 !important;
+}
+.login_input input{
+    border: none;
+    outline: none !important;
+    background-color: transparent;
+    border: 0px solid;
+}
+.button_primary{
+    background-color: #fb641b !important;
+}
+.cancel_it{
+    font-size:40px !important;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+
 /* navbar */
 .nav_bar  {
     height: 56px;
