@@ -14,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   </head>
-<body>
-  <div class="login_conatiner">
+
+<body id="main">
+  <!-- login -->
+  <div class="login_conatiner" id="login_here">
     <div class="row login_row">
       <div class="col-md-4 col-sm-4 col-4 bg-primary">
         <div class="p-md-3 text-wrap mt-3">
@@ -28,36 +30,81 @@
           
           <form>
             <div class="form-floating mb-3 text-dark">
-              <!-- <label for="exampleInputEmail1" class="form-label ">Email address</label> -->
-              <input type="email" class="form-control login_input" id="floatingInput" aria-describedby="emailHelp" placeholder="Please Enter Email/ Mobile no">
+              <input type="email" class="form-control  login_input border border-end-0 border-start-0 border-top-0" id="floatingInput" aria-describedby="emailHelp" placeholder="Please Enter Email/ Mobile no">
               <label for="floatingInput" class="text-black">Email address</label>
-
-            
-
-              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
             <div class="form-floating mb-3">
-              <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-              <input type="password" class="form-control" id="exampleInputPassword1"placeholder="Please Enter Password">
+              <input type="password" class="form-control border border-end-0 border-start-0 border-top-0" id="exampleInputPassword1"placeholder="Please Enter Password">
               <label for="exampleInputPassword1" class="text-black">Password</label>
 
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label text-black fs-6 fw-light" for="exampleCheck1">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</label>
+              <label class="form-check-label text-black fs-6 fw-light " for="exampleCheck1">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</label>
             </div>
-            <button type="submit" class=" btn button_primary text-white">Submit</button>
+            <button type="submit" class=" btn container-fluid button_primary text-white">Submit</button>
           </form>
 
-
+          <div class="sign_up_conatiner mt-3 text-center">
+            <a href="#" >
+              New to Flipkart? Create an account
+            </a>
+          </div>
         </div>
       </div>
       <div class="col-md-1 col-sm-1 col-1 bg-transparent text-black">
-        <span class="text-white cancel_it"><i class="fa-solid fa-xmark"></i></span>
+        <span class="text-black cancel_it" onclick="closeLogin()"><i class="fa-solid fa-xmark text-black"></i></span>
       </div>
     </div>
-
+    
   </div>
+  
+  
+  <!-- Signup -->
+  <div class="login_conatiner1" id="login_here">
+    <div class="row login_row">
+      <div class="col-md-4 col-sm-4 col-4 bg-primary">
+        <div class="p-md-3 text-wrap mt-3">
+          <h4>Login</h4>
+          <p class="text-wrap">Get access to your Orders, Wishlist and Recommendations</p>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-7 col-7 bg-white">
+        <div class="p-md-3 login_form mt-3">
+          
+          <form>
+            <div class="form-floating mb-3 text-dark">
+              <input type="email" class="form-control  login_input border border-end-0 border-start-0 border-top-0" id="floatingInput" aria-describedby="emailHelp" placeholder="Please Enter Email/ Mobile no">
+              <label for="floatingInput" class="text-black">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control border border-end-0 border-start-0 border-top-0" id="exampleInputPassword1"placeholder="Please Enter Password">
+              <label for="exampleInputPassword1" class="text-black">Password</label>
+
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control border border-end-0 border-start-0 border-top-0" id="exampleInputPassword1"placeholder="Please Enter Password">
+              <label for="exampleInputPassword1" class="text-black">Confirm Password</label>
+
+            </div>
+            
+            <button type="submit" class=" btn container-fluid button_primary text-white">Submit</button>
+          </form>
+
+          <div class="sign_up_conatiner mt-3 text-center">
+            <a href="#" >
+              New to Flipkart? Create an account
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-1 bg-transparent text-black">
+        <span class="text-black cancel_it" onclick="closeLogin()"><i class="fa-solid fa-xmark text-black"></i></span>
+      </div>
+    </div>
+    
+  </div>
+
 <header>
   <!-- Nav bar -->
   <div class="nav_bar container-fluid background_primary fixed-top ">
@@ -776,6 +823,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 <!-- For Best Of section scroll arrows -->
 <script>
+  window.onload = login()
+
   function leftScroll() {
     const left = document.querySelector(".best_of_main_container");
     left.scrollBy(400, 0);
@@ -783,6 +832,19 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
   function rightScroll() {
     const right = document.querySelector(".best_of_main_container");
     right.scrollBy(-400, 0);
+  }
+
+  // login
+
+  function login(){
+
+    document.getElementById('login_here').style.visibility = 'visible';
+    document.getElementById('main').style.visibility = 'hidden'
+  }
+  function closeLogin(){
+    document.getElementById('login_here').style.visibility = 'hidden';
+    document.getElementById('main').style.visibility = 'visible'
+
   }
 </script>
 
