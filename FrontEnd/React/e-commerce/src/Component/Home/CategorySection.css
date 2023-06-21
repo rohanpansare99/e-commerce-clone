@@ -1,0 +1,135 @@
+
+/* Header */
+.categories_container{
+    margin-top: 56px;
+    width: auto !important;
+    background-color: white;
+}
+.categories{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.categories {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+category_item{
+    position: relative;
+}
+.categories::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.categories_container, .categories{
+    height: 112.09px;
+}
+.category_item{
+    min-width: 136px;
+    text-align: center;
+}
+.cat_img{
+    height: 70%;
+}
+.cat_img img{
+    margin-top: 8%;
+    height: 90%;
+}
+.cat_title{
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    
+}
+
+
+
+.more_popover{
+    display: none;
+
+    /* height: 200px; */
+    width:200px;
+    background-color: #ffff;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 33px;
+    z-index: 1000  !important;
+}
+.more_popover_cat{
+    top:113px;
+    
+}
+.more_popover ul {
+   padding-left: 0px;
+}
+.haspopover{
+    position: relative;
+}
+.haspopover p{
+    margin-bottom: 0;
+}
+.more_popover ul li{
+    height: 40px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    padding-top: 8px;
+    padding-bottom: 10px;
+    /* margin: 2px; */
+}
+.more_popover ul li a{
+    color: black;
+    font-size: 14px;
+}
+.haspopover:hover .drop_icon i{
+    transform: rotate(180deg);
+    transition:  0.1s all ease-in-out;
+}
+.haspopover:hover .more_popover{
+    display: block;
+}
+
+
+
+
+
+
+/* Responsive  */
+
+/* media query  767px */
+@media (max-width:768px){
+    
+    .categories{
+        margin-top: 104px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .cat_title{
+        font-weight: 300;
+        font-size: 13px;
+        color: black;
+    }
+} 
+
+/* media query  576px */
+@media (max-width:576px){
+    
+    .categories_container{
+        margin-top: 89px;
+    }
+    .categories{
+        margin-top: 104px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .category_item{
+        min-width: 89px;
+        text-align: center;
+    }
+    .cat_img img{
+        margin-top: 15%;
+        height: 80%;
+    }
+    .cat_title{
+        font-weight: 300;
+        font-size: 12px;
+    }
+}
