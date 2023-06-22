@@ -100,3 +100,28 @@ db.categories.insert([
         ]
     }
 ])
+
+db.categories.insert([
+    {
+        "category_id":1,
+        "category_name": "Mobile",
+        "category_img" :"https://i.ibb.co/6HrQqNB/22fddf3c7da4c4f4.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 13,
+                "subcat_name":"Mobiles",
+            }
+        ]
+    },
+    {
+        "category_id": 5,
+        "category_name": "Appliances",
+        "category_img" :"https://i.ibb.co/0GqtZ1d/Appliences.webp",
+        "subcategory" : [
+            {
+                "subcat_id": 14,
+                "subcat_name":"Appliances",
+            }
+        ]
+    }
+])

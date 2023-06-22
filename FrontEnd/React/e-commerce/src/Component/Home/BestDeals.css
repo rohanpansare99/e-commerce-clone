@@ -1,0 +1,71 @@
+
+/* sub_cat_Section  best of section*/
+.sub_cat_Section{
+    height: 290px;
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+
+}
+.sub_cat_Section .row{
+    height: 285px;
+}
+.section_desc_container1{
+    background-image: url(https://i.ibb.co/hW9J9C1/catbannappl.webp);
+    background-size: contain;
+    background-position:bottom center;
+    background-repeat: no-repeat;
+    
+}
+.desc{
+    width: 100%;
+}
+
+.best_of_container,
+ .subcat_option{
+    height: 100%;
+}
+.best_of_container{
+   padding: 0 !important;
+}
+.best_of_main_container{
+    width: 87%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.best_of_main_container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+.best_of_main_container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+
+.subcat_option{
+    width: 180px !important;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.subcat_option .sub_cat_img{
+    width: 180px;
+}
+.subcat_option a .sub_cat_img img{
+    height: 220px;
+    
+}
+.arrow_navigator{
+    height: 90px;
+    width: 40px;
+    background-color: #919294 ;
+}
+
+.arrow_navigator span i{
+    color: black;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 0;
+}
