@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import './BestDeals.css'
+import {Link} from 'react-router-dom';
 const base_url ="https://e-com-24a3.onrender.com"
 
 
@@ -34,14 +35,17 @@ const BestDeals=()=>{
         return data.map((item)=>{
             return(
                 <div className="subcat_option" >
-                    <a href="#" className=" ">
+                    <Link to={`/listing/${item.subcat_id}`}>
+                        {/* <a href="#" className=" "> */}
                         <div className="sub_cat_img text-center">
-                        <img src={item.subcat_img} alt="{item.subcat_name}"/>
+                            <img src={item.subcat_img} alt="{item.subcat_name}"/>
                         </div>
                         <div className="sub_cat_title text-black text-center">
-                        {item.subcat_name}
+                            {item.subcat_name}
                         </div>
-                    </a>
+                        {/* </a> */}
+                    </Link>
+                    
                 </div>
             )
         })
@@ -50,6 +54,7 @@ const BestDeals=()=>{
 
     const BestDealCat=(data)=>{
         if(data){
+            
             return cat.map((item)=>{
             return(
                 <section className="BestOfSection container-fluid sub_cat_Section">

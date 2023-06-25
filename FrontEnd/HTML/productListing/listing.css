@@ -371,13 +371,16 @@ button, a{
     .product_item_container .row{
         height: 175px !important;
         overflow: hidden;
-        
     }
     .prod_specs{
         visibility: hidden;
     }
+    .prod_heading{
+        height: 50px;
+        overflow: hidden;
+    }
     /* .ht{
-        height: 120px;
-    }*/
+        align-items: first baseline !important;
+    } */
 } 
 
