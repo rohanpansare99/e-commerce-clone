@@ -21,7 +21,7 @@ const ListingDispl =(props) =>{
                 return listData.map((item) => {
                     return(
                         <div className="product_item_container border border-end-0 border-start-0 border-top-0">
-                            <Link to={`/details/${item.product_id}`}>
+                            {/* <Link to={`/details/${item.product_id}`}> */}
                             
                                     <div className="row">
                                         <div className="ht col-md-3 col-sm-3 col-4 d-flex justify-content-center align-items-md-center">
@@ -34,9 +34,12 @@ const ListingDispl =(props) =>{
                                                 <div className=" ht col-md-8 col-sm-8 col-12">
                                                     <div className="prod_details_container">
                                                         <div className="">
-                                                            <div className="prod_heading text-dark">
-                                                                {item.product_name}
-                                                            </div>
+                                                            <Link to={`/details/${item.product_id}`}>
+
+                                                                <div className="prod_heading text-dark">
+                                                                    {item.product_name}
+                                                                </div>
+                                                            </Link>
                                                             <div className="prod_subheading">
                                                                 <button className="rating btn btn-success py-0 text-white">Hi</button>
                                                                 {item.description}
@@ -69,7 +72,7 @@ const ListingDispl =(props) =>{
                                             </div>
                                         </div>
                                     </div>
-                            </Link>
+                            {/* </Link> */}
 
                             </div>
                                         )

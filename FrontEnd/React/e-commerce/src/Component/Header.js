@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-
+import { Link } from 'react-router-dom';
 
 const Header=()=>{
 
@@ -38,11 +38,13 @@ const Header=()=>{
                             </div>
                         </div>
                         <div className="logo_container ">
-                            <div className="logo">
-                                <img src="https://i.ibb.co/ZBzJ5gQ/flipkart-plus-logo.png" alt=""/>
-                            </div>
+                            <Link to={`/`}>
+                                <div className="logo">
+                                    <img src="https://i.ibb.co/ZBzJ5gQ/flipkart-plus-logo.png" alt=""/>
+                                </div>
+                            </Link>
                             <div className="logo_des">
-                                <span className="fst-italic">Explore</span>
+                                <span className="fst-italic text-white">Explore</span>
                                 <span className="fst-italic text-warning">Plus</span>
                                 <span>
                                 <img src="https://i.ibb.co/0KHycfv/plus-logoimg.png" alt=""/>
@@ -70,7 +72,7 @@ const Header=()=>{
                             <div className=" mt-2">
                             <div className="mx-1">
                                 <a href="#">
-                                <p> Raj
+                                <p className='text-white'> Raj
                                     <span className="drop_icon">
                                     <i className="fa-solid fa-angle-down" style={{color: "#ffffff"}}></i>
                                     </span>
@@ -103,7 +105,7 @@ const Header=()=>{
                         <div className="col-md-4">
                             <div className="  mt-2">
                             {/* <a href="#">
-                                <div className="mx-1">
+                                <div className="mx-1 text-white">
                                 Become a Seller
                                 </div>
                             </a> */}
@@ -114,7 +116,7 @@ const Header=()=>{
                             <div className=" mt-2">
                             <div className="mx-1">
                                 <a href="#">
-                                <p>More
+                                <p className='text-white'>More
                                     <span className="drop_icon">
                                     <i className="fa-solid fa-angle-down me-1" style={{color: "#ffffff"}}></i>
                                     </span>
@@ -144,7 +146,7 @@ const Header=()=>{
                                     <div className="">
                                     <i className="fa-solid fa-cart-shopping" style={{color: "#ffffff"}}></i>
                                     </div>
-                                    <div className="mx-1">
+                                    <div className="mx-1 text-white">
                                     Cart
                                     </div>
                                 </div>

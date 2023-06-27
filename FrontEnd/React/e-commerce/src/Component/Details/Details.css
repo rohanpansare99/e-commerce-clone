@@ -1,0 +1,135 @@
+
+/* Main Product details section */
+.product_details_main_container{
+    margin-top: 70px;
+    color: black !important;
+
+}
+.product_container{
+    margin-top: 15px !important;
+    background-color: white;
+}
+.product_img img {
+    /* width: 80%; */
+    padding: 20px;
+    height: 450px;
+}
+
+.buy_button{
+    width: 190px;
+    height: 45px;
+    margin: 8px;
+    text-align: center;
+}
+.btn_addtocart{
+    background-color: #ff9e06 !important;
+}
+.btn_buynow{
+    background-color: #fb641b !important;
+}
+/* Product details */
+
+
+.prod_details_container{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+.prod_navigations{
+    width: 70%;
+    color: #919294;
+    overflow: hidden;
+    height: 20px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 300;
+   }
+.prod_heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+.prod_subheading{
+    font-size: 14px;
+    font-weight: bold;
+    color: #919294;
+
+}
+.prod_subheading .rating{
+    height: 20px;
+    font-size: 13px;
+}
+.prod_specs{
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+}
+.prod_specs ul{
+    list-style-type: disc;
+    color: #919294;
+    padding-left: 15px;
+}
+.prod_specs ul li p{
+    color: #070708;
+    margin-bottom: 2px !important;
+}
+
+.price{
+    
+    font-size: 28px;
+    font-weight: 500;
+}
+.price_subhead{
+    font-size: 16px;
+}
+
+
+
+
+/* Responsive  */
+
+/* media query  767px */
+@media (max-width:768px){
+    
+    /* main */
+    .product_details_main_container{
+        margin-top: 104px;
+        color: black !important;
+        
+    }
+    .product_img img {
+        padding: 10px;
+        height: 275px;
+    }
+    .buy_button{
+        width: 140px;
+        height: 35px;
+        font-size: 12px !important;
+    }
+    
+} 
+
+/* media query  576px */
+@media (max-width:576px){
+    
+    /* main */
+    .product_details_main_container{
+        margin-top: 104px;
+        color: black !important;
+        
+    }
+    
+}
+
+@media (max-width:395px){
+    
+    /* main */
+    .buy_button{
+        width: 100px;
+        height: 35px;
+        font-size: 10px !important;
+        margin: 0 !important;
+        padding: 0;
+    }
+} 
+

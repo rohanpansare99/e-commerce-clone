@@ -55,8 +55,8 @@
     color: black;
 }
 .prod_specs ul{
-    list-style-type: disc;
-    color: #919294;
+    list-style-type: disc ;
+    color: #919294 ;
     padding-left: 15px;
 }
 .prod_specs ul li p{

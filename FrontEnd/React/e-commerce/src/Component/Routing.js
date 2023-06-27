@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home/Home'
 import Footer from './Footer'
 import Listing from './listing/ListingLogic'
+import Details from './Details/DetailsLogic'
 
 
 
@@ -18,7 +19,7 @@ const Routing = () => {
                         <Route index element={<Home/>}/>
                         <Route path="home" element={<Home/>}/>
                         <Route path="listing/:subCatId" element={<Listing/>}/>
-                        {/* <Route path="details/:prodId" element={<Listing/>}/> */}
+                        <Route path="details/:prodId" element={<Details/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

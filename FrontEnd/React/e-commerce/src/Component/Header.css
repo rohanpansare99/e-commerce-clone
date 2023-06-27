@@ -2,7 +2,7 @@
 *{
     font-family: Roboto, Arial, sans-serif;
     margin: 0;
-    color: #ffff;
+    /* color: #ffff; */
 }
 a:link { text-decoration: none; }
 
@@ -40,7 +40,6 @@ button, a{
 .nav_bar  {
     height: 56px;
     padding-top: 8px;
-    
 }
 
 .logo img{
@@ -58,7 +57,7 @@ button, a{
 }
 .nav_field{
     height: 35px;
-
+    
 }
 .search_input input{
     height: 365x;

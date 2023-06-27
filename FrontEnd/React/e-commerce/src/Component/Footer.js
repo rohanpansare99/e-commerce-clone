@@ -11,10 +11,10 @@ const Footer = () =>{
                         <div className="col-md-7 col-sm-7 col-12 ">
                             <div className="d-flex justify-content-evenly">
                                 <div className="footer_item">
-                                    <div className="footer_item_title">
+                                    <div className="footer_item_title ">
                                         ABOUT
                                     </div>
-                                    <div className="footer_item_content">
+                                    <div className="footer_item_content text-white">
                                         <ul>
                                             <li>
                                             Contact Us
@@ -35,7 +35,7 @@ const Footer = () =>{
                                 <div className="footer_item_title">
                                 HELP
                                 </div>
-                                <div className="footer_item_content">
+                                <div className="footer_item_content text-white">
                                 <ul>
                                     <li>
                                     Payments
@@ -56,7 +56,7 @@ const Footer = () =>{
                                 <div className="footer_item_title">
                                 CONSUMER POLICY
                                 </div>
-                                <div className="footer_item_content">
+                                <div className="footer_item_content text-white">
                                 <ul>
                                     <li>
                                     Return Policy
@@ -77,7 +77,7 @@ const Footer = () =>{
                                 <div className="footer_item_title">
                                 SOCIAL
                                 </div>
-                                <div className="footer_item_content">
+                                <div className="footer_item_content text-white">
                                 <ul>
                                     <li>
                                     Facebook
@@ -92,7 +92,7 @@ const Footer = () =>{
                                 </ul>
                                 </div>
                             </div>
-                            <div className="vr"></div>
+                            <div className="vr text-white"></div>
                             
                             </div>
                         </div>
@@ -103,7 +103,7 @@ const Footer = () =>{
                                     <div className="footer_item_title">
                                         Mail Us
                                     </div>
-                                    <div className="footer_item_content">
+                                    <div className="footer_item_content text-white">
                                         <p>Flipkart Internet Private Limited,
 
                                             Buildings Alyssa, Begonia &
@@ -122,7 +122,7 @@ const Footer = () =>{
                                     <div className="footer_item_title">
                                         Registered Office Address:
                                     </div>
-                                    <div className="footer_item_content">
+                                    <div className="footer_item_content text-white">
                                         <p>Flipkart Internet Private Limited,
 
                                             Buildings Alyssa, Begonia &
@@ -145,8 +145,8 @@ const Footer = () =>{
                             </div>
                         </div>
                     </div>
-                    <hr/>
-                    <div className="text-center">
+                    <hr className='text-white'/>
+                    <div className="text-center text-white fs-6">
                         &copy; Rohan
                     </div>
                 </div>
