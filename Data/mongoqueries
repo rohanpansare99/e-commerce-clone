@@ -1,0 +1,7 @@
+db.food.updateOne({"id":1},{ $set:{"user":"123Ram"}})
+
+
+db.products.updateOne({product_id:4},{ $set:{product_details:["128GBROM", "8GMRAM", "50MP Front camera"]}})
+
+db.food.updateOne({id:1},{ $set:{product_details:["128GBROM", "8GMRAM"]}})
+db.products.find({"product_id":4})
