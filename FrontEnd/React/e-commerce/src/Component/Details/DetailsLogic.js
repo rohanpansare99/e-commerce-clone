@@ -20,6 +20,21 @@ const Details=()=>{
         })
     },[])
 
+    const renderSpec=(data)=>{
+        if(data){
+            return data.map((item)=>{
+                return (
+                    
+                        <tr>
+                            <th scope="row">{item}</th>
+                                                        
+                        </tr>
+                    
+                )
+            })
+        }
+
+    }
 
     const renderDetails=()=>{
         if(prodDetails){
@@ -102,23 +117,14 @@ const Details=()=>{
 
                                 <div className="specs_details mt-4 ">
                                     <div className="heading_spec">
-                                        <h5>Specifications</h5>
+                                        <h5>Product Details</h5>
                                     </div>
                                     <table className="table table-bordered mt-3">
                                             
                                             <tbody>
-                                            <tr>
-                                                <th scope="row">128 GB ROM</th>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">128 GB ROM</th>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">128 GB ROM</th>
-                                                
-                                            </tr>
+                                            
+                                            {renderSpec(prodDetails.product_details)}
+                                            
                                             </tbody>
                                         </table>
                                 </div>
