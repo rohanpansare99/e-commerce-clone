@@ -6,7 +6,8 @@ import Home from './Home/Home'
 import Footer from './Footer'
 import Listing from './listing/ListingLogic'
 import Details from './Details/DetailsLogic'
-
+import CartDetails from './Cart/CartDisplay'
+import PlaceOrder from './Order/PlaceOrder'
 
 
 const Routing = () => {
@@ -20,6 +21,8 @@ const Routing = () => {
                         <Route path="home" element={<Home/>}/>
                         <Route path="listing/:subCatId" element={<Listing/>}/>
                         <Route path="details/:prodId" element={<Details/>}/>
+                        <Route path="CartDetails" element={<CartDetails/>}/>
+                        <Route path="PlaceOrder/:prodId" element={<PlaceOrder/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

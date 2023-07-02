@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import './Details.css'
-import { useParams} from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 const base_url ="https://e-com-24a3.onrender.com"
@@ -10,7 +10,8 @@ const Details=()=>{
     let param=useParams();
     let [prodDetails, setProdDetails]=useState();
     let productId=param.prodId;
-    console.log(prodDetails)
+    let navigate =useNavigate();
+
     useEffect(() => {
        
         sessionStorage.setItem('prodId',productId)
@@ -19,6 +20,17 @@ const Details=()=>{
             setProdDetails(res.data[0])
         })
     },[])
+
+    // for navigate to buy
+    const proceedToBuy=()=>{
+        navigate(`/placeOrder/${productId}`)
+    }
+    // for navigate to add to cart
+    const proceedToCart=()=>{
+        navigate(`/cartDetails`)
+    }
+
+
 
     const renderSpec=(data)=>{
         if(data){
@@ -51,14 +63,16 @@ const Details=()=>{
                                 <div className="col-md-12 col-sm-4 col-12 ">
                                     <div className="product_buy_options text-center mb-2 d-flex flex-column justify-content-center align-items-center">
                                         <div className=" align-self-center">
-                                            <div className="btn btn_addtocart rounded-0 buy_button text-center text-white py-md-2 py-1">
+                                            <button className="btn btn_addtocart rounded-0 buy_button text-center text-white py-md-2 py-1"
+                                            onClick={proceedToCart}>
                                                 <i className="fa-solid fa-cart-shopping mx-2 " style={{color: "#ffffff"}}></i>
                                                 ADD TO CART
-                                            </div>
-                                            <div className="btn btn_buynow rounded-0 buy_button text-center text-white py-md-2 py-1">
+                                            </button>
+                                            <button className="btn btn_buynow rounded-0 buy_button text-center text-white py-md-2 py-1"
+                                            onClick={proceedToBuy}>
                                                 <i className="fa-sharp fa-solid fa-bolt-lightning mx-2" style={{color: "#ffffff"}}></i>
                                                 BUY NOW
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

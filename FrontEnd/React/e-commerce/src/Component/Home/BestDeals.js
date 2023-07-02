@@ -54,8 +54,9 @@ const BestDeals=()=>{
 
     const BestDealCat=(data)=>{
         if(data){
-            
             return cat.map((item)=>{
+            if(item.subcategory.length > 1){
+
             return(
                 <section className="BestOfSection container-fluid sub_cat_Section">
   
@@ -67,7 +68,7 @@ const BestDeals=()=>{
                                     Best of {item.category_name}
                                 </div>
                                 <div className="button btn btn-primary  mx-auto">
-                                    View All
+                                    View All 
                                 </div>
                                 </div>
                             </div>
@@ -102,6 +103,7 @@ const BestDeals=()=>{
 
                 </section>
             )
+            }
         })
     }
     }
