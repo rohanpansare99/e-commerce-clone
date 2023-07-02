@@ -13,12 +13,56 @@ const PlaceOrder=()=>{
 
     useEffect(() => {
        
-        //sessionStorage.setItem('prodId',productId)
+        // sessionStorage.setItem('prodId',productId)
         axios.get(`${base_url}/details/${productId}`)
         .then((res) => {
             setProdDetails(res.data[0])
         })
     },[])
+    const initialValues = {
+        id:Math.floor( Math.random()*100000),
+        // rest_name: params.restName,
+        //name: "data.name",
+        name: "test1",
+        //email: 'data.email',
+        email: 'test@gmail.com',
+        //cost: Math.floor(Math.random()*1000),
+        //phone: "data.phone",
+        phone: "1234567890",
+        
+        address: "Hno 23 Sector 15, Navi Mumbai, Asalpa, Maharashtra, 411435",
+        // cost: prodDetails.price,
+        // product_id: `${prodDetails.product_id}`,
+        product_id: productId,
+        // product_name:prodDetails.product_name,
+        // product_img: prodDetails.product_img
+        
+    };
+
+    const [values, setValues] = useState(initialValues);
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setValues({
+          ...values,
+          [name]: value,
+          
+        });
+         console.log(values)
+    };
+
+    const checkout = () => {
+        console.log(values)
+        fetch(`${base_url}/placeOrder`,{
+            method: 'POST',
+            headers:{
+                'accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify(values)
+        })
+        .then(navigate(`/Orders`))
+    }
 
  const RenderDetails=()=>{
  if(prodDetails){
@@ -39,21 +83,21 @@ const PlaceOrder=()=>{
                         
                             <form className="row g-3">
                                 <div className="col-md-6">
-                                    <label for="inputPassword4" className="form-label col-form-label-sm">Name</label>
-                                    <input type="Text" className="form-control form-control-sm" id="inputname"/>
+                                    <label htmlFor="inputPassword4" className="form-label col-form-label-sm">Name</label>
+                                    <input type="Text" className="form-control form-control-sm" name='name' defaultValue={values.name} id="inputname1" onChange={handleInputChange}/>
                                 </div>
                                 <div className="col-md-6">
-                                <label for="inputEmail4" className="form-label col-form-label-sm">Email</label>
-                                <input type="email" className="form-control form-control-sm" id="inputEmail4"/>
+                                <label htmlFor="inputEmail4" className="form-label col-form-label-sm">Email</label>
+                                <input type="email" className="form-control form-control-sm" name='email' defaultValue={values.email} id="inputEmail4" onChange={handleInputChange}/>
                                 </div>
                                 
                                 <div className="col-12">
-                                <label for="inputAddress" className="form-label col-form-label-sm">Address</label>
-                                <input type="text" className="form-control form-control-sm" id="inputAddress" placeholder="1234 Main St"/>
+                                <label htmlFor="inputAddress" className="form-label col-form-label-sm">Address</label>
+                                <input type="text" className="form-control form-control-sm" name='address' defaultValue={values.address} id="inputAddress" placeholder="1234 Main St" onChange={handleInputChange}/>
                                 </div>
                                 <div className="col-12">
-                                <label for="inputAddress2" className="form-label col-form-label-sm">Mobile Number</label>
-                                <input type="text" className="form-control form-control-sm" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+                                <label htmlFor="inputAddress2" className="form-label col-form-label-sm">Mobile Number</label>
+                                <input type="text" className="form-control form-control-sm" name='phone' defaultValue={values.phone} id="inputAddress2" placeholder="Apartment, studio, or floor" onChange={handleInputChange}/>
                                 </div>
                                 
                             
@@ -117,14 +161,14 @@ const PlaceOrder=()=>{
                                     <i className="fa-solid fa-minus"></i>
                                 </div>
                                 <div>
-                                    <input type="text" className="quantity_field text-center" value="1"/>
+                                    <input type="text" className="quantity_field text-center" defaultValue="1"/>
                                 </div>
                                 <div className="quantity_btn border mx-3 rounded-circle text-center">
                                     <i className="fa-solid fa-plus"></i>
                                 </div>
-                                <div className="btn">
+                                {/* <div className="btn">
                                     Remove
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     
@@ -133,7 +177,9 @@ const PlaceOrder=()=>{
                     
                     
                     <div className=" text-end mx-4 pb-4 rounded-0 d-flex justify-content-end align-items-center">
-                        <div className="btn place_order_btn align-self-center fw-bold py-2">PLACE ORDER</div>
+                        <button className="btn place_order_btn align-self-center fw-bold py-2"
+                        onClick={checkout}>PLACE ORDER
+                        </button>
                     </div>
                 </div>
             </div>
@@ -153,11 +199,11 @@ const PlaceOrder=()=>{
                         <div className="filter_container m-3 justify-content-between">
                             <div className="d-flex justify-content-between px-md-2 my-3">
                                 <span className="">Price(1 item)</span>
-                                <span className=" ">₹30,000</span>
+                                <span className=" ">₹{prodDetails.price}</span>
                             </div>
                             <div className="d-flex justify-content-between px-md-2 my-3">
                                 <span className="">Discount</span>
-                                <span className="text-success  ">-₹2,000</span>
+                                <span className="text-success  ">-₹{Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)}</span>
                             </div>
                             <div className="d-flex justify-content-between px-md-2 pb-3 border border-end-0 border-start-0 border-top-0">
                                 <span className="">Delivery Charges</span>
@@ -166,12 +212,12 @@ const PlaceOrder=()=>{
                             <div className="fs-6 fw-bold border border-end-0 border-start-0 border-top-0">
                                 <div className="d-flex justify-content-between px-md-2 my-3 ">
                                     <span className="">Total Amount</span>
-                                    <span className=" ">₹30,000</span>
+                                    <span className=" ">₹{prodDetails.price}</span>
                                 </div>
                             </div>
                             <div className="fs-6 fw-bold">
                                 <div className="d-flex justify-content-between px-md-2 my-3 ">
-                                    <span className="text-start text-success">You will save ₹620 on this order</span>
+                                    <span className="text-start text-success">You will save ₹₹{Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)} on this order</span>
                                 </div>
                             </div>
                             

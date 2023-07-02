@@ -8,7 +8,7 @@ import Listing from './listing/ListingLogic'
 import Details from './Details/DetailsLogic'
 import CartDetails from './Cart/CartDisplay'
 import PlaceOrder from './Order/PlaceOrder'
-
+import ViewOrder from './Order/ViewOrder'
 
 const Routing = () => {
     return(
@@ -23,6 +23,7 @@ const Routing = () => {
                         <Route path="details/:prodId" element={<Details/>}/>
                         <Route path="CartDetails" element={<CartDetails/>}/>
                         <Route path="PlaceOrder/:prodId" element={<PlaceOrder/>}/>
+                        <Route path="Orders" element={<ViewOrder/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

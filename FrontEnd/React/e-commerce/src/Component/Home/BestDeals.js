@@ -34,7 +34,7 @@ const BestDeals=()=>{
     if(data){
         return data.map((item)=>{
             return(
-                <div className="subcat_option" >
+                <div className="subcat_option" key={item.subcat_id} >
                     <Link to={`/listing/${item.subcat_id}`}>
                         {/* <a href="#" className=" "> */}
                         <div className="sub_cat_img text-center">
@@ -58,7 +58,7 @@ const BestDeals=()=>{
             if(item.subcategory.length > 1){
 
             return(
-                <section className="BestOfSection container-fluid sub_cat_Section">
+                <section className="BestOfSection container-fluid sub_cat_Section" key={item.category_id}>
   
                     <div className="row">
                         <div className="col-md-3 col-sm-3 col-0 d-flex justify-content-center align-items-center section_desc_container1">
@@ -74,7 +74,7 @@ const BestDeals=()=>{
                             </div>
                         </div>
                         <div className="col-md-9 col-sm-9 col-12 best_of_container  d-flex justify-content-between" id="carouselExampleControls1">
-                        <button className=" carousel_btnpre" type="button" onclick="rightScroll()">
+                        <button className=" carousel_btnpre" type="button" onClick={rightScroll}>
                             <div className="arrow_navigator fs-2">
                             <span className="">
                                 <i className="fa-solid fa-chevron-left" style={{color: "#050505"}}></i>
@@ -89,7 +89,7 @@ const BestDeals=()=>{
                             
 
                         </div>
-                        <button className=" carousel_btnnxt " type="button" onclick="leftScroll()">
+                        <button className=" carousel_btnnxt " type="button" onClick={leftScroll}>
                             <div className="arrow_navigator fs-2">
                             <span className="" aria-hidden="true">
                                 <i className="fa-solid fa-chevron-right" style={{color: "#050505"}}></i>
