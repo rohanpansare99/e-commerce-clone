@@ -11,7 +11,7 @@ const PlaceOrder=()=>{
     let productId=param.prodId;
     let navigate =useNavigate();
 
-    useEffect(() => {
+    useEffect( () => {
        
         // sessionStorage.setItem('prodId',productId)
         axios.get(`${base_url}/details/${productId}`)
@@ -19,7 +19,10 @@ const PlaceOrder=()=>{
             setProdDetails(res.data[0])
         })
     },[])
+    let name= prodDetails;
+console.log(name)
     const initialValues = {
+        ...prodDetails,
         id:Math.floor( Math.random()*100000),
         // rest_name: params.restName,
         //name: "data.name",
@@ -38,18 +41,20 @@ const PlaceOrder=()=>{
         // product_img: prodDetails.product_img
         
     };
-
+//console.log(initialValues)
     const [values, setValues] = useState(initialValues);
+        //  console.log(values)
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setValues({
           ...values,
+          //...prodDetails,
           [name]: value,
           
         });
-         console.log(values)
     };
+//console.log(values)
 
     const checkout = () => {
         console.log(values)
@@ -59,7 +64,7 @@ const PlaceOrder=()=>{
                 'accept':'application/json',
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify(values)
+            body:JSON.stringify(values  )
         })
         .then(navigate(`/Orders`))
     }
@@ -199,7 +204,7 @@ const PlaceOrder=()=>{
                         <div className="filter_container m-3 justify-content-between">
                             <div className="d-flex justify-content-between px-md-2 my-3">
                                 <span className="">Price(1 item)</span>
-                                <span className=" ">₹{prodDetails.price}</span>
+                                <span className=" ">₹{parseInt(prodDetails.price.replace(/[,]+/g, ''))+ Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)}</span>
                             </div>
                             <div className="d-flex justify-content-between px-md-2 my-3">
                                 <span className="">Discount</span>
