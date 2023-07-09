@@ -61,7 +61,7 @@ app.get('/filter/:subCatId', async(req,res) => {
         }
     }
     else{
-        query = {}
+        query = {"subcategory.subcat_id":subCatId}
     }
     let collection = "products";
     let output = await getData(collection,query);

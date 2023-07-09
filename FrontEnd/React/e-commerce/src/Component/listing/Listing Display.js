@@ -8,7 +8,7 @@ const ListingDispl =(props) =>{
         if(data){
             return data.map((item)=>{
                 return(
-                    <li><p>{item.offer_name}
+                    <li key={item.offer_id}><p>{item.offer_name}
                         </p></li>
                 )
             })
@@ -20,7 +20,7 @@ const ListingDispl =(props) =>{
             if(listData.length > 0){
                 return listData.map((item) => {
                     return(
-                        <div className="product_item_container border border-end-0 border-start-0 border-top-0">
+                        <div className="product_item_container border border-end-0 border-start-0 border-top-0" key={item._id}>
                             {/* <Link to={`/details/${item.product_id}`}> */}
                             
                                     <div className="row">
@@ -87,9 +87,9 @@ const ListingDispl =(props) =>{
                                     <div>
                                         <h2>Loading</h2>
                                         {/* <img src="/images/loader.gif" alt="loader"/> */}
-                                        <div class="d-flex justify-content-center align-items-center">
-                    <div class="spinner-border text-dark" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                                        <div className="d-flex justify-content-center align-items-center">
+                    <div className="spinner-border text-dark" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
                     </div>
                 </div>
