@@ -63,11 +63,11 @@ const Details=()=>{
                                 <div className="col-md-12 col-sm-4 col-12 ">
                                     <div className="product_buy_options text-center mb-2 d-flex flex-column justify-content-center align-items-center">
                                         <div className=" align-self-center">
-                                            <button className="btn btn_addtocart rounded-0 buy_button text-center text-white py-md-2 py-1"
+                                            {/* <button className="btn btn_addtocart rounded-0 buy_button text-center text-white py-md-2 py-1"
                                             onClick={proceedToCart}>
                                                 <i className="fa-solid fa-cart-shopping mx-2 " style={{color: "#ffffff"}}></i>
                                                 ADD TO CART
-                                            </button>
+                                            </button> */}
                                             <button className="btn btn_buynow rounded-0 buy_button text-center text-white py-md-2 py-1"
                                             onClick={proceedToBuy}>
                                                 <i className="fa-sharp fa-solid fa-bolt-lightning mx-2" style={{color: "#ffffff"}}></i>

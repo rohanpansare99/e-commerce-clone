@@ -20,9 +20,9 @@ const PlaceOrder=()=>{
         })
     },[])
     let name= prodDetails;
-console.log(name)
+// console.log(name)
     const initialValues = {
-        ...prodDetails,
+        //...prodDetails,
         id:Math.floor( Math.random()*100000),
         // rest_name: params.restName,
         //name: "data.name",
@@ -41,9 +41,9 @@ console.log(name)
         // product_img: prodDetails.product_img
         
     };
-//console.log(initialValues)
+
     const [values, setValues] = useState(initialValues);
-        //  console.log(values)
+        
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -54,10 +54,11 @@ console.log(name)
           
         });
     };
-//console.log(values)
+
 
     const checkout = () => {
-        console.log(values)
+        
+        
         fetch(`${base_url}/placeOrder`,{
             method: 'POST',
             headers:{
