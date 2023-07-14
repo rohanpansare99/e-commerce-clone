@@ -17,7 +17,7 @@ const Listing=()=>{
     let subcatid = params.subCatId;
     useEffect(() => {
        //here storing value so that can used to come back after back button
-        // sessionStorage.setItem('subCatId',subcatid)
+        sessionStorage.setItem('subCatId',subcatid)
         axios.get(`${base_url}/products/${subcatid}`)
         .then((res) => {
             setProdList(res.data)

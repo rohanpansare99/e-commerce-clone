@@ -24,7 +24,7 @@ const ListingDispl =(props) =>{
                             {/* <Link to={`/details/${item.product_id}`}> */}
                             
                                     <div className="row">
-                                        <div className="ht col-md-3 col-sm-3 col-4 d-flex justify-content-center align-items-md-center">
+                                        <div className="ht col-md-3 col-sm-3 col-4 d-flex justify-content-center align-items-md-top">
                                             <div className="prod_img img-fluid text-center ">
                                                 <img src={item.product_img} alt=""/>
                                             </div>

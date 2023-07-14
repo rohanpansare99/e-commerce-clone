@@ -2,27 +2,43 @@ import React,{useState, useEffect} from 'react';
 import './Details.css'
 import { useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 const base_url ="https://e-com-24a3.onrender.com"
 
 const Details=()=>{
 
     let param=useParams();
     let [prodDetails, setProdDetails]=useState();
+    // let [similarProdDetails, setSimilarProdDetails]=useState();
     let productId=param.prodId;
     let navigate =useNavigate();
 
     useEffect(() => {
        
-        sessionStorage.setItem('prodId',productId)
+        //sessionStorage.setItem('prodId',productId)
         axios.get(`${base_url}/details/${productId}`)
         .then((res) => {
             setProdDetails(res.data[0])
         })
-    },[])
+        
+        
+    },[productId])
+    const [prodList,setProdList] = useState();
+    let subcatid = sessionStorage.getItem('subCatId');
+    useEffect(() => {
+       //here storing value so that can used to come back after back button
+        // sessionStorage.setItem('subCatId',subcatid)
+        axios.get(`${base_url}/products/${subcatid}`)
+        .then((res) => {
+            setProdList(res.data)
+        })
+    },[productId])
 
     // for navigate to buy
     const proceedToBuy=()=>{
+        sessionStorage.setItem('prodPrice',prodDetails.price)
+        sessionStorage.setItem('prodName',prodDetails.product_name)
+        sessionStorage.setItem('prodImg',prodDetails.product_img)
         navigate(`/placeOrder/${productId}`)
     }
     // for navigate to add to cart
@@ -46,6 +62,27 @@ const Details=()=>{
             })
         }
 
+    }
+
+    const renderSimilarProd=(data)=>{
+        if(data){
+            return data.map((item)=>{
+                if(item.product_id != productId){
+                return(
+                    <div className="similar_item my-3 border py-2  mx-2">
+                        <Link to={`/details/${item.product_id}`}>
+                                <div className="prod_imgs text-center">
+                                <img src={item.product_img} alt=""/>
+                                </div>
+                                <div className="similar_desc mt-3 text-center text-black">
+                                    {item.product_name}
+                                </div>
+                        </Link>
+                    </div>
+                )
+                }
+            })
+        }
     }
 
     const renderDetails=()=>{
@@ -147,21 +184,14 @@ const Details=()=>{
                         </div>
                     </div>
 
-                    {/* <div className=" simailar_prod_container">
+                    <div className=" simailar_prod_container">
                         <div className="fs-5">You might be interested in</div>
                         <div className="similar_prods_container d-flex justify-content-start mb-3">
-                            <div className="similar_item my-3 border py-2  mx-2">
-                                <div className="prod_imgs text-center">
-                                <img src="https://i.ibb.co/znmLYDH/pocco-c50.webp" alt=""/>
-                                </div>
-                                <div className="similar_desc mt-3 text-center">
-                                    POCO C50 (Royal Blue, 32 GB)  (2 GB RAM)
-                                </div>
-                            </div>
                             
+                            {renderSimilarProd(prodList)}
                             
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             )
         }

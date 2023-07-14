@@ -9,7 +9,8 @@ import Details from './Details/DetailsLogic'
 import CartDetails from './Cart/CartDisplay'
 import PlaceOrder from './Order/PlaceOrder'
 import ViewOrder from './Order/ViewOrder'
-
+import Login from './Login/LoginComponent'
+import Register from './Login/RegisterComponent'
 const Routing = () => {
     return(
         <div>
@@ -24,6 +25,8 @@ const Routing = () => {
                         <Route path="CartDetails" element={<CartDetails/>}/>
                         <Route path="PlaceOrder/:prodId" element={<PlaceOrder/>}/>
                         <Route path="Orders" element={<ViewOrder/>}/>
+                        <Route path="login" element={<Login/>}/>
+                        <Route path="signUp" element={<Register/>}/>
                     </Route>
                 </Routes>
                 <Footer/>

@@ -37,15 +37,15 @@ const CatagoryDisplay=(props)=>{
                 return(
                         
                     <div key={item.category_id} className="category_item haspopover ">
-                        <a href="">
+                        {/* <a href=""> */}
                             <div className="cat_img">
-                                <img src={item.category_img} alt="fashion"/>
+                                <img src={item.category_img} alt={item.category}/>
                             </div>
                             <div className="cat_title text-center drop_icon">
                                 {item.category_name}
                                 <i className="fa-solid fa-angle-down " style={{color: "#080808"}}></i>
                             </div>
-                        </a>
+                        {/* </a> */}
                         <div className="more_popover more_popover_cat">
                             <ul className="list-group">
                                 

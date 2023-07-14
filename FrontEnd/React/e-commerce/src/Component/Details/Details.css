@@ -85,6 +85,37 @@
 }
 
 
+/* similar */
+.similar_prods_container{
+    height: 380px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.similar_prods_container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
+.similar_prods_container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.similar_item{
+    width: 400px !important;
+    padding: 10px;
+   
+}
+.prod_imgs img{
+    height: 200px;
+    overflow: hidden !important;
+}
+similar_desc{
+    overflow: hidden !important;
+
+}
 
 
 /* Responsive  */

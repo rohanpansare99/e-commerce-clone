@@ -27,7 +27,7 @@ const Header=()=>{
                             </div>
                             <div className="text-dark">
                                 <i className="fa-sharp fa-regular fa-star m-3" style={{color: "#0c0d0d"}}></i>
-                                Flipkart Plus Zone
+                                Ecom Plus Zone
                             </div>
                             <hr/>
                             <div className="text-dark">
@@ -39,8 +39,9 @@ const Header=()=>{
                         </div>
                         <div className="logo_container ">
                             <Link to={`/`}>
-                                <div className="logo">
+                                <div className="logo ">
                                     <img src="https://i.ibb.co/ZBzJ5gQ/flipkart-plus-logo.png" alt=""/>
+                                    {/* <img src="https://i.ibb.co/8X727Dv/pngegg.png" alt=""/> */}
                                 </div>
                             </Link>
                             <div className="logo_des">
@@ -71,13 +72,16 @@ const Header=()=>{
                         <div className="col-md-2 haspopover">
                             <div className=" mt-2">
                             <div className="mx-1">
+                            <Link to={`/login`}>
                                 <a href="#">
-                                <p className='text-white'> Raj
+                                {/* <p className='text-white'> Raj
                                     <span className="drop_icon">
                                     <i className="fa-solid fa-angle-down" style={{color: "#ffffff"}}></i>
                                     </span>
-                                </p>
+                                </p> */}
+                                <button className='bg-white btn-white px-5'> Login </button>
                                 </a>
+                                </Link>
                             </div>
                             <div className="more_popover">
                                 <ul className="list-group">

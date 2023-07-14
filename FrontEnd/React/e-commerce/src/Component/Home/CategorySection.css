@@ -19,13 +19,19 @@ category_item{
 }
 .categories_container, .categories{
     height: 112.09px;
+    /* height: 300.09px; */
 }
+/* .categories_container{ */
+    /* height: 112.09px; */
+    /* height: 100.09px;
+} */
 .category_item{
     min-width: 136px;
     text-align: center;
 }
 .cat_img{
-    height: 70%;
+    /* height: 70%; */
+    height: 75px;
 }
 .cat_img img{
     margin-top: 8%;
@@ -38,7 +44,14 @@ category_item{
     
 }
 
+.haspopover:active .more_popover{
+    
+    display: block;
 
+}
+.haspopover:active .categories_container, .categories{
+    height: 300.09px;
+}
 
 
 /* Responsive  */

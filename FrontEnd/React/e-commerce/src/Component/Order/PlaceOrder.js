@@ -12,7 +12,6 @@ const PlaceOrder=()=>{
     let navigate =useNavigate();
 
     useEffect( () => {
-       
         // sessionStorage.setItem('prodId',productId)
         axios.get(`${base_url}/details/${productId}`)
         .then((res) => {
@@ -34,16 +33,19 @@ const PlaceOrder=()=>{
         phone: "1234567890",
         
         address: "Hno 23 Sector 15, Navi Mumbai, Asalpa, Maharashtra, 411435",
-        // cost: prodDetails.price,
+        cost: sessionStorage.getItem('prodPrice'),
         // product_id: `${prodDetails.product_id}`,
         product_id: productId,
+        product :sessionStorage.getItem('prodName'),
+        quantity:1,
         // product_name:prodDetails.product_name,
-        // product_img: prodDetails.product_img
+         product_img: sessionStorage.getItem('prodImg') 
         
     };
 
     const [values, setValues] = useState(initialValues);
         
+    
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -54,7 +56,6 @@ const PlaceOrder=()=>{
           
         });
     };
-
 
     const checkout = () => {
         
@@ -70,6 +71,19 @@ const PlaceOrder=()=>{
         .then(navigate(`/Orders`))
     }
 
+    const onChangeQty=(sign) => {
+        let qty=values.quantity;
+        if (sign === '+') {
+            setValues( {...values, "quantity":qty+1})
+        } else if (sign === '-') {
+        if(qty>1){
+
+            setValues( {...values, "quantity":qty-1})
+
+        }
+        console.log(values)
+    }
+    }
  const RenderDetails=()=>{
  if(prodDetails){
     return(
@@ -163,13 +177,14 @@ const PlaceOrder=()=>{
                                 </div>
                             </div>
                             <div className="quantity col-12 mx-5 mb-2 d-flex justify-content-start">
-                                <div className="quantity_btn border mx-3 rounded-circle text-center">
+                                <div className="quantity_btn border mx-3 rounded-circle text-center" onClick={()=>{onChangeQty('-')}}>
                                     <i className="fa-solid fa-minus"></i>
                                 </div>
                                 <div>
-                                    <input type="text" className="quantity_field text-center" defaultValue="1"/>
+                                    <div className="quantity_field text-center border"  >{values.quantity}
+                                    </div>
                                 </div>
-                                <div className="quantity_btn border mx-3 rounded-circle text-center">
+                                <div className="quantity_btn border mx-3 rounded-circle text-center" onClick={()=>{onChangeQty(`+`)}}>
                                     <i className="fa-solid fa-plus"></i>
                                 </div>
                                 {/* <div className="btn">
@@ -223,7 +238,7 @@ const PlaceOrder=()=>{
                             </div>
                             <div className="fs-6 fw-bold">
                                 <div className="d-flex justify-content-between px-md-2 my-3 ">
-                                    <span className="text-start text-success">You will save ₹₹{Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)} on this order</span>
+                                    <span className="text-start text-success">You will save ₹{Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)} on this order</span>
                                 </div>
                             </div>
                             
