@@ -219,12 +219,12 @@ const PlaceOrder=()=>{
                     <div className="border border-end-0 border-start-0 border-top-0">
                         <div className="filter_container m-3 justify-content-between">
                             <div className="d-flex justify-content-between px-md-2 my-3">
-                                <span className="">Price(1 item)</span>
-                                <span className=" ">₹{parseInt(prodDetails.price.replace(/[,]+/g, ''))+ Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)}</span>
+                                <span className="">Price({values.quantity} item)</span>
+                                <span className=" ">₹{(values.quantity)*(parseInt(prodDetails.price.replace(/[,]+/g, ''))+ Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100))}</span>
                             </div>
                             <div className="d-flex justify-content-between px-md-2 my-3">
                                 <span className="">Discount</span>
-                                <span className="text-success  ">-₹{Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)}</span>
+                                <span className="text-success  ">-₹{(values.quantity)*Math.floor(parseInt(prodDetails.price.replace(/[,]+/g, ''))*parseInt(prodDetails.discount.replace(/ ^\D+/g, ''))/100)}</span>
                             </div>
                             <div className="d-flex justify-content-between px-md-2 pb-3 border border-end-0 border-start-0 border-top-0">
                                 <span className="">Delivery Charges</span>
@@ -233,7 +233,7 @@ const PlaceOrder=()=>{
                             <div className="fs-6 fw-bold border border-end-0 border-start-0 border-top-0">
                                 <div className="d-flex justify-content-between px-md-2 my-3 ">
                                     <span className="">Total Amount</span>
-                                    <span className=" ">₹{prodDetails.price}</span>
+                                    <span className=" ">₹{prodDetails.price*values.quantity}</span>
                                 </div>
                             </div>
                             <div className="fs-6 fw-bold">
