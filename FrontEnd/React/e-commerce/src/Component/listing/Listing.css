@@ -18,6 +18,7 @@
 }
 .product_item_container{
     height: 250px !important;
+    /* overflow-y: scroll; */
 }
 .product_item_container .row{
     /* height: 260px; */

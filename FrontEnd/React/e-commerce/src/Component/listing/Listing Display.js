@@ -41,7 +41,9 @@ const ListingDispl =(props) =>{
                                                                 </div>
                                                             </Link>
                                                             <div className="prod_subheading">
-                                                                <button className="rating btn btn-success py-0 text-white">Hi</button>
+                                                                <div className="rating btn btn-success py-0 text-white">
+                                                                {item.ratings} <i class="fa fa-star"></i>
+                                                                </div>
                                                                 {item.description}
                                                             </div>
                                                         </div>

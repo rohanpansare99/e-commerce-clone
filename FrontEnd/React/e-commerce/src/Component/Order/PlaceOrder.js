@@ -233,7 +233,7 @@ const PlaceOrder=()=>{
                             <div className="fs-6 fw-bold border border-end-0 border-start-0 border-top-0">
                                 <div className="d-flex justify-content-between px-md-2 my-3 ">
                                     <span className="">Total Amount</span>
-                                    <span className=" ">₹{prodDetails.price*values.quantity}</span>
+                                    <span className=" ">₹{parseInt(prodDetails.price.replace(/[,]+/g, ''))*values.quantity}</span>
                                 </div>
                             </div>
                             <div className="fs-6 fw-bold">

@@ -1,6 +1,7 @@
 let express = require('express');
 let app = express();
-let port = process.env.PORT||1920;
+// let port = process.env.PORT||1920;
+let port = '1920';
 let Mongo = require('mongodb');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -163,8 +164,18 @@ app.delete('/deleteOrder',async(req,res) => {
     res.send(output)
 })
 
+//Test For User Login
+// app.get('/login', async(req, res) => {
 
+//     let query = {}
+//     let collection = 'users'
+//     // if(req.body.email_id){
+//     //     query = {}
+//     // }
+//     let output = await getData(collection,query);
+//     res.send(output)
 
+// })
 
 
 
