@@ -1,9 +1,57 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+const base_url ="https://e-com-24a3.onrender.com"
 
 const Header=()=>{
+    const [prods, setProds]=useState("")
+    const [res, setRes]=useState([])
 
+    const fetchData=(value)=>{
+        fetch(`${base_url}/products`, {method:'GET'})
+        .then((cate) => cate.json())
+        .then((data)=>{
+            const result= data.filter((product)=>{
+                return(
+                    (value &&
+                    product &&
+                    product.product_name &&
+                    product.product_name.toLowerCase().includes(value.toLowerCase()))
+                    //  ||
+                    // (product.brand[0].brand_name &&
+                    //     product.brand[0].brand_name.toLowerCase().includes(value.toLowerCase()))
+                )
+            })
+            console.log(result)
+            setRes(result)
+            console.log(res)
+        } )
+    }
+
+    const handleChange=(value)=>{
+        setProds(value)
+        fetchData(value);
+
+    }
+    const DisplaySearchList=()=>{
+            
+            if(res){
+               return res.map((item) => {
+                    return(
+                        <li className="list-group-item search_item">
+                                        {/* <a href="#" className=""> */}
+                                        <Link to={`/details/${item.product_id}`}>
+
+                                           {item.product_name}
+                                        {/* </a> */}
+                                        </Link>
+                        </li>      
+                                        
+                        
+                    )
+               })
+            }
+    }
     return(
         <>
 
@@ -61,11 +109,20 @@ const Header=()=>{
                     </div>
                     <div className="col-md-5 col-12 bg-light px-0 nav_field">
                         <div className="search_input  d-flex ">
-                        <input className="form-control border-0 mx-0 " type="search" placeholder="Search for products, brands and more" aria-label="Search"/>
+                        <input className="SearchBar form-control border-0 mx-0 " type="search" placeholder="Search for products, brands and more" aria-label="Search"
+                         value={prods.product_name} onChange={(e)=> handleChange(e.target.value)}/>
                         <button>
                             <i className="fa-solid fa-magnifying-glass p-2  fs-md-6"  style={{color: "#2874f0"}}></i>      
                         </button>
                         </div>
+                        {/* Test for search result */}
+                        <div className="search_result_Container">
+                                <ul className="list-group search_list">
+                                    {DisplaySearchList()}
+                                    
+                                </ul>
+                            </div>
+
                     </div>
                     <div className="col-md-5 d-none d-md-block nav_field ">
                         <div className="row">
@@ -83,7 +140,7 @@ const Header=()=>{
                                 </a>
                                 </Link>
                             </div>
-                            <div className="more_popover">
+                            {/* <div className="more_popover">
                                 <ul className="list-group">
                                 <li className="list-group-item">
                                     <a href="#" className="">
@@ -103,7 +160,7 @@ const Header=()=>{
                                     </a>
                                 </li>
                                 </ul>
-                            </div>
+                            </div> */}
                             </div>
                         </div>
                         <div className="col-md-4">

@@ -63,6 +63,23 @@ button, a{
     height: 365x;
     font-size: 14px;
 }
+.SearchBar:focus{
+ outline: none;
+}
+.search_result_Container{
+    max-height: 40vh;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 8px #ddd;
+}
+.search_item{
+    max-height: 33px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    border: none;
+}
+.search_item:hover{
+    background-color: #dedede;
+}
 .drop_icon{
     font-size: 10px;
 }
